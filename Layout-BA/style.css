@@ -1,0 +1,145 @@
+/* RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+
+}
+
+ul, ol, li{
+    list-style: none;
+
+}
+
+/* Fim do Reset */
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 80px;
+    background-color: white;
+}
+
+header{
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo{
+    height: 96px;
+    width: 96px;
+    background-image: url('https://static.vecteezy.com/ti/vetor-gratis/t1/10994232-nike-logotipo-design-de-roupas-pretas-icone-abstrato-futebol-ilustracaoial-com-fundo-branco-gratis-vetor.jpg');
+    background-color: white;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menu ul{
+    display: flex;
+    gap: 32px;
+    font-size: 32px;
+    color: #ffffff;
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+
+}
+
+.conteudo{
+    width: 50%;
+    padding-right: 128px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.conteudo h1{
+    font-size: 80px;
+    color: rgb(178, 16, 16);
+
+}
+.conteudo p{
+    font-size: 36px;
+    color: black;
+}
+.conteudo button{
+    height: 80px;
+    width: 300px;
+    font-size: 32px;
+    background-color: rgb(178, 16, 16);
+    color: black;
+    font-size: 32px;
+}
+.social{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.social div{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: rgb(178, 16, 16);
+}
+.social-icon {
+    height: 96px;
+    width: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(178, 16, 16);
+    border-radius: 50%;
+    font-size: 48px;
+    color: black;
+}
+.destaque {
+    width: 50%;
+    background-image: url('https://veja.abril.com.br/wp-content/uploads/2023/04/MICHAEL-JORDAN-AIR-JORDAN-NIKE-1985.jpg.jpg?crop=1&resize=1212,909');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+
+footer{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#imagem1 {
+    background-image: url('./img/87390.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#imagem2 {
+    background-image: url('./img/Jumpman_logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#imagem3 {
+    background-image: url('./img/nike.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
