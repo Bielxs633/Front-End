@@ -1,0 +1,208 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0b0d13;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden; /* Esconde qualquer overflow causado pelas elipses */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: transparent;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.login-buttons button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.login-buttons .join-now {
+    background-color: white;
+    color: black;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    text-align: center;
+    z-index: 2;
+    padding: 0 20px;
+}
+
+.content {
+    max-width: 800px;
+    margin-bottom: 50px;
+}
+
+.content h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #88f5a5;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Mantém o espaço entre o botão de "Start Trial" e o grupo de email/subscribe */
+    margin-bottom: 40px;
+    position: relative; /* Para permitir que os elementos internos sejam posicionados em relação a este contêiner */
+}
+
+.email-subscribe {
+    display: flex;
+    align-items: center;
+}
+
+.email-subscribe input {
+    padding: 15px;
+    width: 250px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+}
+
+.email-subscribe button.subscribe {
+    padding: 15px 25px;
+    background-color: #00c76f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.logo-section img {
+    height: 40px;
+}
+
+.version-info {
+    font-size: 14px;
+    color: gray;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* Ellipse Styles */
+.ellipse {
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.ellipse img {
+    width: 100%;
+    height: auto;
+}
+
+/* green ellipse - Ajustada para o canto inferior direito */
+.ellipse-green {
+    width: 1100px;
+    height: 850px;
+    bottom: -200px; /* Ajuste para posicioná-la fora do fundo */
+    right: 0px; /* Mantém a elipse à direita fora da tela */
+}
+
+/* white ellipse */
+.ellipse-white {
+    width: 600px;
+    height: 900px;
+    top: 0px;
+    left: 0px;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    .ellipse-green {
+        width: 650px;
+        height: 650px;
+        bottom: -200px;
+        right: -150px;
+    }
+
+    .ellipse-white {
+        width: 500px;
+        height: 500px;
+        top: -150px;
+        left: -150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .cta {
+        flex-direction: column;
+    }
+
+    .cta input {
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ellipse-green {
+        width: 500px;
+        height: 500px;
+        bottom: -100px;
+        right: -150px;
+    }
+
+    .ellipse-white {
+        width: 400px;
+        height: 400px;
+        top: -150px;
+        left: -150px;
+    }
+}
