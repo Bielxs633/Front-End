@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #14161E;
+    color: #e0e0e0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+}
+
+nav .logo {
+    font-size: 24px;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.auth-buttons .btn {
+    margin-left: 15px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.login {
+    background-color: transparent;
+    color: #e0e0e0;
+}
+
+.join {
+    background-color: white;
+    color: black;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('hero-bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: white;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #d3d3d3;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.release-badge {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.cta input {
+    padding: 20px;
+    border: 1px solid #444;
+    border-radius: 20px;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .logos img {
+    margin: 20px;
+    height: 40px;
+    opacity: 0.8;
+}
+
+/* Estilos para as elipses */
+.background-elipses {
+    position: relative; /* Adiciona posição relativa ao contêiner */
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* Evita que as elipses ultrapassem a tela */
+}
+
+.ellipse_branca img {
+    position: absolute;
+    top: -20px; /* Ajusta a posição vertical */
+    right: 0px; /* Ajusta a posição horizontal */
+    width: 700px;
+    opacity: 0.3;
+}
+
+.ellipse_verde img {
+    position: absolute;
+    bottom: -200px; /* Ajusta a posição vertical */
+    left: -200px; /* Ajusta a posição horizontal */
+    width: 800px;
+    opacity: 0.4;
+    transform: rotate(45deg); /* Aplica uma rotação para o efeito de inclinação */
+}
