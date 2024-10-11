@@ -1,0 +1,11 @@
+body{
+    background-color: #14161E;
+}
+
+header{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+}
