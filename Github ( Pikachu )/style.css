@@ -121,3 +121,65 @@ footer{
     transform: translate(-50%, -50%);
     height: 75vh;
 }
+
+@media(max-width: 960px){
+    body{
+        padding-inline: 32px;
+        padding-bottom: 32px;
+    }
+
+    main{
+        justify-content: space-between;
+    }
+
+    .container{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        text-align: center;
+        gap: 32px;
+    }
+
+    .container p {
+        width: 80%;
+    }
+
+    .container div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    footer{
+        display: none;
+    }
+
+    .pikachu-image{
+        height: 50vh;
+    }
+}
+
+@media (max-width: 640px){
+    header div{
+        display: none;
+    }
+
+    .container div{
+        width: 100%;
+    }
+
+    .container p{
+        display: none;
+    }
+
+    .container h2{
+        font-size: 36px;
+    }
+
+    .title span{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
